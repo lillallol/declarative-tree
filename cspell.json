@@ -1,0 +1,26 @@
+{
+    "ignorePaths": [
+        "./node_modules/**",
+        "./package-lock.json",
+        "./jest.config.js",
+        "./coverage/**",
+        "./dist/**",
+        "./TBD/**"
+    ],
+    "ignoreWords": [
+        "lillallol",
+        "squarify",
+        "diplet",
+        "diplets",
+        "setted",
+        "unimported",
+        "serializable",
+        "npmjs",
+        "rectanglify",
+        "endregion",
+        "unimportedrc",
+        "stringtotreehorizontalfactory",
+        "stringtotreeverticalfactory",
+        "treetostringhorizontalfactory"
+    ]
+}

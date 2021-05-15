@@ -1,0 +1,14 @@
+{
+    "entry": [
+        "src/index.ts"
+    ],
+    "ignoreUnimported": [
+        "src/examples/**/*.ts",
+        "src/test-utils/**/*.ts",
+        "src/**/*.test.ts",
+        "src/index.ts"
+    ],
+    "ignorePatterns": [
+        "**/node_modules/**"
+    ]
+}
