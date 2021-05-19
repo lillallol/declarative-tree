@@ -12,18 +12,13 @@
     - [string to tree vertical](#string-to-tree-vertical)
 - [Documentation](#documentation)
     - [Concretions](#concretions)
-        - [
-    stringToTreeHorizontalFactory
-](#----stringtotreehorizontalfactory)
-        - [
-    stringToTreeVerticalFactory
-](#----stringtotreeverticalfactory)
-        - [
-    treeToStringHorizontalFactory
-](#----treetostringhorizontalfactory)
+        - [stringToTreeHorizontalFactory](#----stringtotreehorizontalfactory)
+        - [stringToTreeVerticalFactory](#----stringtotreeverticalfactory)
+        - [treeToStringHorizontalFactory](#----treetostringhorizontalfactory)
 - [Motivation](#motivation)
 - [Contributing](#contributing)
 - [Changelog](#changelog)
+    - [1.0.1](#101)
     - [1.0.0](#100)
 - [License](#license)
 
@@ -41,11 +36,11 @@ Generalized way to convert a string to tree, and vice versa. Useful for creating
 
 ## Code coverage
 
-The code coverage is around 90%.
+The testing code coverage is around 90%.
 
 ## Examples
 
-The following examples deal with the following tree:
+The following examples deal with converting an AVL tree string representation to tree data structure and vice versa. Here is the code that defines the AVL tree:
 
 <!--#region mock-tree !./src/examples/mockTree.ts-->
 
@@ -204,7 +199,7 @@ import { AvlTree, AvlTreeNode, AvlTreeRootNode, mockAvlTree } from "./mockTree";
 
 describe(stringToTreeHorizontalFactory.name, () => {
     it(`
-        returns a function that converts a tree to string, according to the 
+        returns a function that converts a string to tree, according to the 
         instructions the factory has been provided
     `, () => {
         const stringToAVLTree = stringToTreeHorizontalFactory<
@@ -314,7 +309,7 @@ import { AvlTree, AvlTreeNode, AvlTreeRootNode, mockAvlTree } from "./mockTree";
 
 describe(stringToTreeVerticalFactory.name, () => {
     it(`
-        returns a function that converts a tree to string, according to the 
+        returns a function that converts a string to tree, according to the 
         instructions the factory has been provided
     `, () => {
         const stringToAvlTree = stringToTreeVerticalFactory<
@@ -443,6 +438,7 @@ describe(stringToTreeVerticalFactory.name, () => {
  * factory.
  */
 export declare const stringToTreeHorizontalFactory: IStringToTreeFactory;
+
 ```
 
 <details open="">
@@ -762,6 +758,7 @@ export declare type IStringToTree<placeholder, tree> = (strings: TemplateStrings
  * factory.
  */
 export declare const stringToTreeVerticalFactory: IStringToTreeFactory;
+
 ```
 
 <details open="">
@@ -1081,6 +1078,7 @@ export declare type IStringToTree<placeholder, tree> = (strings: TemplateStrings
  * to the factory.
  */
 export declare const treeToStringHorizontalFactory: ITreeToStringHorizontalFactory;
+
 ```
 
 <details open="">
@@ -1467,6 +1465,11 @@ You will find the following commands useful:
     Take a look at the related configuration `./unimportedrc.json`.
 
 ## Changelog
+
+### 1.0.1
+
+-   Fixed some mistakes in the examples.
+-   Minor internal changes.
 
 ### 1.0.0
 

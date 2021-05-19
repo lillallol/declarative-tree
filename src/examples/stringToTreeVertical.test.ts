@@ -3,7 +3,7 @@ import { AvlTree, AvlTreeNode, AvlTreeRootNode, mockAvlTree } from "./mockTree";
 
 describe(stringToTreeVerticalFactory.name, () => {
     it(`
-        returns a function that converts a tree to string, according to the 
+        returns a function that converts a string to tree, according to the 
         instructions the factory has been provided
     `, () => {
         const stringToAvlTree = stringToTreeVerticalFactory<
