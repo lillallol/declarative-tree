@@ -1,6 +1,6 @@
 {
     "name": "declarative-tree",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Generalized way to convert a string to tree, and vice versa. Useful for creating declarative tree tests.",
     "main": "./dist/index.js",
     "typings": "./dist/index.d.ts",
