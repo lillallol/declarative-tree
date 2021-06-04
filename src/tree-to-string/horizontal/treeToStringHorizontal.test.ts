@@ -10,7 +10,7 @@ import {
     stateTreeGetChildren,
     stateTreeGetRoot,
     isSerializablePrimitive,
-    tagUnindent
+    tagUnindent,
 } from "../../test-utils/index";
 import { treeToStringHorizontalFactory } from "./treeToStringHorizontal";
 

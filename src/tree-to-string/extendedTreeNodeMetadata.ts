@@ -1,7 +1,10 @@
 import { objectAssignPrototype } from "../common/es-utils/objectAssignPrototype";
-import { ITreeNodeMetadataTreeToString} from "../publicApi";
+import { ITreeNodeMetadataTreeToString } from "../publicApi";
 import { treeNodeMetadataFactory } from "../tree-node-metadata/treeNodeMetadata";
-import { ITreeNodeMetadataState, treeNodeMetadataStateFactory } from "../tree-node-metadata/treeNodeMetadataStateFactory";
+import {
+    ITreeNodeMetadataState,
+    treeNodeMetadataStateFactory,
+} from "../tree-node-metadata/treeNodeMetadataStateFactory";
 import { ITreeNodeMetadataForTreeToStringSpecific } from "../types";
 
 /**
@@ -23,7 +26,7 @@ export function extendedTreeNodeMetadata<treeNode>(_: {
         state,
     });
 
-    Array.from({ length: nodeGroups.flat(3).length }).forEach((_, i) => {
+    Array.from({ length: nodeGroups.flat(2).length }).forEach((_, i) => {
         const toPush = objectAssignPrototype({
             object: treeNodeMetadataSpecific(i),
             prototype: treeNodeMetadata(i),
@@ -46,5 +49,3 @@ function treeNodeMetadataSpecificFactory<TreeNode>(_: {
         };
     };
 }
-
-

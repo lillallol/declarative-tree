@@ -23,7 +23,7 @@ export function treeNodeMetadata<placeholderType, TreeNode>(_: {
 
     const treeNodeMetadataSpecific = treeNodeMetadataSpecificFactory<placeholderType, TreeNode>({ state, branches });
 
-    for (let i = 0; i < nodeGroups.flat(3).length; i++) {
+    for (let i = 0; i < nodeGroups.flat(2).length; i++) {
         const toPush = objectAssignPrototype({
             object: treeNodeMetadataSpecific(i),
             prototype: treeNodeMetadata(i),

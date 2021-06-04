@@ -21,7 +21,7 @@ export function treeNodeMetadataStateFactory<IPlaceholderXorTreeNode>(_: {
     _nodeGroups: IPlaceholderXorTreeNode[][][];
 } {
     const { nodeGroups } = _;
-    const _totalNumberOfNodes = nodeGroups.flat(3).length;
+    const _totalNumberOfNodes = nodeGroups.flat(2).length;
     const _placeholderGroupsIndex = ijkToIndex(nodeGroups);
     return {
         _ijkToIndex: _placeholderGroupsIndex,
@@ -48,4 +48,4 @@ export type ITreeNodeMetadataState<IPlaceholderXorTreeNode> = {
     _subTreeHeight: number[];
     _subTreeLength: number[];
     _nodeGroups: IPlaceholderXorTreeNode[][][];
-}
+};

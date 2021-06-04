@@ -25,7 +25,9 @@ import { constants } from "../../constants";
 export function extractBranchRows<T>(strings: TemplateStringsArray, placeholders: T[]): string[][] {
     const toReturn = transposeMatrix(
         stringTo2DMatrix(
-            rectanglify(unindent(templateLiteralToString(strings, ...placeholders.map(() => " " + constants.separator))))
+            rectanglify(
+                unindent(templateLiteralToString(strings, ...placeholders.map(() => " " + constants.separator)))
+            )
         )
     )
         .filter((row) => row.includes(constants.separator))

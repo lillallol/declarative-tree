@@ -18,6 +18,7 @@
 - [Motivation](#motivation)
 - [Contributing](#contributing)
 - [Changelog](#changelog)
+    - [1.0.2](#102)
     - [1.0.1](#101)
     - [1.0.0](#100)
 - [License](#license)
@@ -1446,8 +1447,6 @@ You will find the following commands useful:
     npm run build-md
     ```
 
-    Make sure that `./bin/bin.js` exists when you execute this command, otherwise it will not work.
-
 -   Checks the project for spelling mistakes:
 
     ```bash
@@ -1464,7 +1463,54 @@ You will find the following commands useful:
 
     Take a look at the related configuration `./unimportedrc.json`.
 
+-   Logs which node modules can be updated:
+
+    ```bash
+    npm run check-updates
+    ```
+
+-   Updates the node modules to their latest version (even if they introduce breaking changes):
+
+    ```bash
+    npm run update
+    ```
+
+-   Formats all the typescript files in the `./src` folder:
+
+    ```bash
+    npm run format
+    ```
+
 ## Changelog
+
+### 1.0.2
+
+**Bugs fixed**
+
+-   Placeholders groups were being over flattened. For example the following template literal:
+
+    ```ts
+    `
+        ${""}
+        |_ ${"p"}
+           |_ ${"a"}
+              |_ ${"t"}
+                 |_ ${"h"}
+                    |_ ${["prop1", -1, "=>", 1]}
+    `
+    ```
+
+    would wrongly have as placeholders:
+
+    ```ts
+    ["","p","a","t","h",...["prop1", -1, "=>", 1]]
+    ```
+
+    instead of:
+
+    ```ts
+    ["","p","a","t","h",["prop1", -1, "=>", 1]]
+    ```
 
 ### 1.0.1
 

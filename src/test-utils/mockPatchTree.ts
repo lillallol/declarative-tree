@@ -1,6 +1,5 @@
 import { IGetChildren, IGetRoot } from "../publicApi";
 
-
 type baseNode = {
     branches: { [x: string]: childNode };
 

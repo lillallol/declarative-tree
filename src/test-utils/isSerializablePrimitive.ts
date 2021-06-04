@@ -9,8 +9,6 @@
  * isSerializablePrimitive(undefined);//false
  * isSerializablePrimitive({a:1,b:2});//false
  */
-export function isSerializablePrimitive(
-    v : unknown
-): v is string | boolean | number | null {
+export function isSerializablePrimitive(v: unknown): v is string | boolean | number | null {
     return typeof v === "string" || typeof v === "boolean" || typeof v === "number" || v === null;
 }

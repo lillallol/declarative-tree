@@ -35,9 +35,9 @@ export type contextIndexToChildrenIndexesReturnedType = number[][];
  *  7: [],
  *  8: [],
  * }
-*/
+ */
 export function contextIndexToChildrenIndexes<T>(
-    numberOfNodes : number,
+    numberOfNodes: number,
     placeholderGroups: T[][][],
     placeholderGroupsIndex: number[][][]
 ): contextIndexToChildrenIndexesReturnedType {
@@ -52,7 +52,7 @@ export function contextIndexToChildrenIndexes<T>(
             toReturn[parentIndex] = placeholderGroupsIndex[i + 1][jBot];
         },
     });
-    for (let i = placeholderIndex ; i <  numberOfNodes; i++ ) {
+    for (let i = placeholderIndex; i < numberOfNodes; i++) {
         toReturn[i] = [];
     }
     return toReturn;

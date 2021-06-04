@@ -6,8 +6,6 @@
  * isOfObjectInternalClass([1,2]);//false
  * isOfObjectInternalClass(new Date());//false
  */
-export function isOfObjectInternalClass(
-    v : unknown
-): v is { [x: string]: unknown } {
+export function isOfObjectInternalClass(v: unknown): v is { [x: string]: unknown } {
     return Object.prototype.toString.call(v) === "[object Object]";
 }

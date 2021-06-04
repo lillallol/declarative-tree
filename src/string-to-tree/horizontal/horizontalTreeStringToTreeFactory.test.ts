@@ -22,6 +22,7 @@ describe(stringToTreeHorizontalFactory.name, () => {
                     right: null,
                 };
                 all[0].treeNode = root;
+                console.log(all.length);
                 all.forEach((data, i) => {
                     if (i === 0) return;
                     const { parent } = data;

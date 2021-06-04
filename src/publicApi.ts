@@ -284,9 +284,7 @@ export type ITreeToStringHorizontalFactory = <treeNodeOrTreeRootNode, tree>(stra
      * @description
      * Function that converts a tree node to string.
      */
-    nodeToString: (parameters: {
-        treeNodeMetadata: ITreeNodeMetadataTreeToString<treeNodeOrTreeRootNode>;
-    }) => string;
+    nodeToString: (parameters: { treeNodeMetadata: ITreeNodeMetadataTreeToString<treeNodeOrTreeRootNode> }) => string;
 }) => ITreeToString<tree>;
 
 type ITreeToString<tree> = (parameters: {

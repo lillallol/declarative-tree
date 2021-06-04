@@ -14,9 +14,9 @@ import { ijkToIndex } from "./ijkToIndex";
  *           8    11
  * `;
  * //heights
- * [  4, 
- *   2, 3, 
- * 1, 1, 1, 2, 
+ * [  4,
+ *   2, 3,
+ * 1, 1, 1, 2,
  *         1, 1];
  */
 export function subTreeHeights<T>(placeholderGroups: T[][][]): number[] {
@@ -40,5 +40,5 @@ export function subTreeHeights<T>(placeholderGroups: T[][][]): number[] {
         placeholderGroupsIndex: ijkToIndex(placeholderGroups),
     });
 
-    return toReturn.flat(3);
+    return toReturn.flat(2);
 }

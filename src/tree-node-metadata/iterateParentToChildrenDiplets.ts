@@ -63,9 +63,9 @@ export function iterateParentToChildrenDiplets<T>(_: {
                         jBot,
                         k,
                         parent: placeholderGroups[i][j][k],
-                        children: placeholderGroups[i+1][jBot],
+                        children: placeholderGroups[i + 1][jBot],
                         parentIndex: placeholderGroupsIndex[i][j][k],
-                        childrenIndex: placeholderGroupsIndex[i+1][jBot],
+                        childrenIndex: placeholderGroupsIndex[i + 1][jBot],
                     });
                     jBot--;
                 }
@@ -83,9 +83,9 @@ export function iterateParentToChildrenDiplets<T>(_: {
                         jBot,
                         k,
                         parent: placeholderGroups[i][j][k],
-                        children: placeholderGroups[i+1][jBot],
+                        children: placeholderGroups[i + 1][jBot],
                         parentIndex: placeholderGroupsIndex[i][j][k],
-                        childrenIndex: placeholderGroupsIndex[i+1][jBot],
+                        childrenIndex: placeholderGroupsIndex[i + 1][jBot],
                     });
                     jBot++;
                 }

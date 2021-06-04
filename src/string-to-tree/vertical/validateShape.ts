@@ -22,7 +22,7 @@ export function validateShape<T>(strings: TemplateStringsArray, placeholders: T[
     //                      .     ).
     //                          ${11}
     //                          (.
-    //                          ${3} 
+    //                          ${3}
     //                                ).
     //                                ${4}
     // `;

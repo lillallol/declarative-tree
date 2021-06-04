@@ -17,9 +17,9 @@ import { sum } from "../common/es-utils/sum";
  * `;
  * //it returns
  * [
- *    9, 
- *   3, 5, 
- * 1, 1, 1, 3, 
+ *    9,
+ *   3, 5,
+ * 1, 1, 1, 3,
  *         1, 1
  * ];
  */
@@ -44,5 +44,5 @@ export function subTreeLengths<T>(placeholderGroups: T[][][]): number[] {
         placeholderGroupsIndex: ijkToIndex(placeholderGroups),
     });
 
-    return toReturn.flat(3);
+    return toReturn.flat(2);
 }

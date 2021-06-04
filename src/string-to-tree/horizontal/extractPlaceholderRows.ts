@@ -20,7 +20,7 @@ import { lastLine } from "../../common/es-utils/lastLine";
  *  ["t", "a"],
  *  ["h"]
  * ];
-*/
+ */
 export function extractPlaceholderRows<T>(strings: TemplateStringsArray, placeholders: T[]): T[][] {
     const placeholderRows: T[][] = [[placeholders[0]]];
     const lengthToRow: { [x: string]: number } = {

@@ -20,5 +20,5 @@
  * ];
  */
 export function indexToIJK(placeholderGroupsIndex: number[][][]): { i: number; j: number; k: number }[] {
-    return placeholderGroupsIndex.map((row, i) => row.map((group, j) => group.map((_l, k) => ({ i, j, k })))).flat(3);
+    return placeholderGroupsIndex.map((row, i) => row.map((group, j) => group.map((_l, k) => ({ i, j, k })))).flat(2);
 }

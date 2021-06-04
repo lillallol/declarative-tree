@@ -81,7 +81,7 @@ describe(nodeGroups.name, () => {
                 ],
                 [],
             ],
-            [[]]
+            [[]],
         ]);
     });
 });

@@ -65,7 +65,7 @@ export function placeholdersGrouped<T>(placeholders: T[], branches: string[][]):
     for (let i = 0; i < branches.length; i++) {
         toReturn[i + 1] = [];
         let J = 0;
-        for (let j = 0; j < branches[i].length ; j++) {
+        for (let j = 0; j < branches[i].length; j++) {
             if (branches[i][j] !== constants.separator) {
                 if (toReturn[i + 1][J] === undefined) {
                     toReturn[i + 1][J] = [];

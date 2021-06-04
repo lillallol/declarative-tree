@@ -52,8 +52,6 @@ describe(ijkToIndex.name, () => {
             },
         ],
     ])("returns the index ", ({ p1p2, result }) => {
-        expect(
-            ijkToIndex(placeholdersGrouped(Array.from(p1p2[0]), extractBranches(...p1p2)))
-        ).toStrictEqual(result);
+        expect(ijkToIndex(placeholdersGrouped(Array.from(p1p2[0]), extractBranches(...p1p2)))).toStrictEqual(result);
     });
 });
